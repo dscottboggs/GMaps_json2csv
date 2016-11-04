@@ -12,9 +12,12 @@
 #	the way in2csv does.
 
 import sys
-import re
 
-mapsFile = open('LocationHistory.json') #the file to be parsed
+try:
+	mapsFile = open('LocationHistory.json') #the file to be parsed
+except IOError:
+	print("Please place LocationHistory.json in the same folder as this script before running it")
+	exit(1)
 rowDivider = "  }, {"		#copypasted from the JSON file
 column_titles = ["timestampMs","latitudeE7","longitudeE7","accuracy","ACTtimestampMs", "onFoot", "inVehicle", "onBicycle", "still", "walking", "running", "exitingVehicle", "tilting", "unknown"]
 lastEntry = ""			#initialize the string that will hold the end file
