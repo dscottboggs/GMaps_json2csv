@@ -4,7 +4,7 @@
 # Author:	D. Scott Boggs
 #	 		scott@tams.tech
 #
-#	Looks in it's directory for the Google Maps JSON file for your 
+#	Looks in its directory for the Google Maps JSON file for your 
 #	location history and parses it as a CSV
 
 #	Please note this outputs the CSV directly to STDOUT, following the standard
