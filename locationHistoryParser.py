@@ -4,9 +4,12 @@
 # Author:	D. Scott Boggs
 #	 		scott@tams.tech
 #
-#	The Google Maps JSON file for your location history and parses it as a CSV
+#	Looks in it's directory for the Google Maps JSON file for your 
+#	location history and parses it as a CSV
+
 #	Please note this outputs the CSV directly to STDOUT, following the standard
-#	used by csvtools for GNU/Linux
+#	used by csvkit for GNU/Linux, but it does not accept the JSON file to stdin,
+#	the way in2csv does.
 
 import sys
 import re
